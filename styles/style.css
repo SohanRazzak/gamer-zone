@@ -11,6 +11,11 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+.icon{
+    height: 24px;
+    cursor: pointer;
+}
+
 .btn-primary {
     border-radius: 48px;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
@@ -21,7 +26,8 @@ body {
 }
 
 /* common rules for sections */
-nav,
+
+.center-container,
 .heroes,
 .videos,
 .featured-games,
@@ -33,7 +39,51 @@ nav,
 }
 
 
+/* header section */
 
+
+
+/* nav section */
+nav{
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.top-nav, .logo, .top-nav ul{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.top-nav{
+    justify-content: space-between;
+    padding: 24px;
+    max-width: 1140px;
+}
+
+.logo img{
+    height: 32px;
+}
+
+.logo h1{
+font-size: 2.25rem;
+font-weight: 700;
+color: #0B0223;
+}
+
+.logo h1::first-letter{
+    color: #FF42A5;
+}
+
+.top-nav ul{
+    list-style: none;
+    gap: 24px;
+}
+
+.follow{
+    border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+padding: 12px 18px;
+}
 
 
 
@@ -101,12 +151,18 @@ font-weight: 600;
 /* responsive design  */
 
 /* tablet and other medium device */
-@media screen and (max-width:992px) {
-    
+@media screen and (max-width:960px) {
+    nav{
+        box-shadow: none;
+    }
+    .top-nav, .top-nav ul{
+        flex-direction: column;
+    }
 }
 
 /* mobile and other small device */
 @media screen and (max-width:576px) {
+
     .category-container{
         gap: 8px;
     }
