@@ -43,16 +43,14 @@ body {
 .heroes,
 .videos,
 .featured-games,
-.career-container,
-.footer-container {
+.career-container {
     max-width: 1140px;
     display: block;
     margin: 0 auto;
 }
 
-
 /* header section */
-.banner{
+.banner {
     background-image: url("../images/background_1.png");
     background-repeat: no-repeat;
     background-size: 50% 100%;
@@ -71,12 +69,12 @@ body {
     flex-basis: 50%;
 }
 
-.banner-text{
+.banner-text {
     padding: 80px 0;
 }
 
-.banner-img img{
-    max-width:100%;
+.banner-img img {
+    max-width: 100%;
 }
 
 .banner-headline {
@@ -204,14 +202,76 @@ nav {
     color: #FF42A5;
 }
 
+/* footer container */
+footer {
+    background: #0B0223;
+    padding: 100px;
+    color: #FFF;
+}
 
+.footer-container {
+    max-width: 650px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 50px;
+}
 
+.footer-logo img {
+    height: 32px;
+}
 
+.footer-logo h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
 
+.footer-logo h1::first-letter {
+    color: #FF42A5;
+}
 
+.footer-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
 
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
 
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    color: rgba(255, 255, 255, 0.60);
+font-size: 0.9rem;
+font-weight: 500;
+margin-bottom: 30px;
+}
+
+.copyright{
+    color: rgba(255, 255, 255, 0.60);
+font-size: 0.9rem;
+font-weight: 500;
+}
 
 
 
@@ -231,15 +291,15 @@ nav {
     }
 
     .top-nav,
-    .top-nav ul{
+    .top-nav ul {
         flex-direction: column;
     }
 
-    .banner{
+    .banner {
         background: none;
     }
 
-    .banner-text{
+    .banner-text {
         width: 100%;
         background-image: url("../images/background_1.png");
         background-repeat: no-repeat;
@@ -247,23 +307,29 @@ nav {
         padding: 20px;
     }
 
-    .banner-text-box{
+    .banner-text-box {
         display: block;
         max-width: 600px;
         margin: 0 auto;
     }
 
-    .banner-container{
+    .banner-container {
         flex-direction: column-reverse;
     }
 }
 
 /* mobile and other small device */
 @media screen and (max-width:576px) {
-    :root{
+    :root {
         font-size: 14px;
     }
+
     .category-container {
         gap: 8px;
+    }
+
+    .footer-nav, .links{
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
