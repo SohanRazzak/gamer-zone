@@ -478,9 +478,13 @@ footer {
         margin: 50px 5px;
     }
 
-    .game-cover,
     .game-text {
+        max-width: 70%;
+    }
+
+    .game-cover{
         max-width: 65%;
+        left: -2.5%;
     }
 
     .game-text h3 {
@@ -502,7 +506,7 @@ footer {
 /* mobile and other small device */
 @media screen and (max-width:576px) {
     .banner-text{
-        background-position: 24px;
+        background-position: 20px;
         padding: 30px;
     }
     .banner-headline{
