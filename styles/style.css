@@ -363,7 +363,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
-
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 40px;
@@ -385,6 +384,10 @@ footer {
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 30px;
+}
+
+.footer-nav li, .links li {
+    cursor: pointer;
 }
 
 .copyright {
