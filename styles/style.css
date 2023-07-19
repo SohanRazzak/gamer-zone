@@ -1,4 +1,4 @@
-/* global styles */
+/* Global styles */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
 * {
@@ -391,7 +391,7 @@ footer {
 }
 
 
-/* responsive design  */
+/* Responsive design  */
 
 /* tablet and other medium device */
 @media screen and (max-width:960px) {
